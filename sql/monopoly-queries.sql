@@ -32,3 +32,8 @@ ORDER BY score DESC
 SELECT *
   FROM Player, PlayerGame, Game
   ;
+-- Join table query
+SELECT player.name, playerGame.*
+FROM player
+JOIN playerGame ON player.id = playerGame.playerID;
+
